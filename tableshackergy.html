@@ -227,8 +227,8 @@
                 <table class="table borderless" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                    <tr>
-                      <th><center>Empfehlung: <br> <FONT SIZE="3">Installation von <br><b>Photovoltaikanlagen</b></FONT></center> </th>
-                      <th><center>Green Index Score: <br><span style="color:green"><FONT SIZE="5"> +10 Punkte</FONT></span></center></th>
+                      <th><center><FONT SIZE="4">Installation von <br><b>Photovoltaikanlagen</b></FONT></center> </th>
+                      <th><center>Green Index Boost: <br><span style="color:green"><FONT SIZE="4"> +10 Punkte</FONT></span></center></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -252,7 +252,9 @@
 					<td colspan="2"><FONT SIZE="2">Begründung des Vorschlags: In Ihrem Gebiert gibt es besonders viel ungenutze Dachflächen mit einer durchschnittlichen Sonneneinstrahlung von 6h/Tag. Dies liegt über dem Druchschnitt in Ihrer Region.</FONT></td>
 					</tr>
 					<tr>
-					<td colspan="2"><center><button type="button" class="btn btn-success">Anfragen</button></center></td>
+					<td colspan="2"><center><div class="text-center">
+  <a href="" class="btn btn-success btn-rounded" data-toggle="modal" data-target="#modalLoginAvatar">Jetzt <b>Index</b> boosten!</a>
+</div></center></td>
 					</tr>
                   </tbody>
                 </table>
@@ -262,6 +264,41 @@
 
         </div>
         <!-- /.container-fluid -->
+		
+		<!--Modal: Login with Avatar Form-->
+<div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header">
+        <img src="img/Marc-hackergy.jpg" alt="avatar" class="img-fluid" style='height: 265px; border:0px'>
+      </div>
+      <!--Body-->
+      <div class="modal-body text-center mb-1">
+
+        <h5 class="mt-1 mb-2">Marc Bredenwischer <br> <small>Sales</small></h5>
+
+        <div class="md-form ml-0 mr-0">
+                      <div class="form-group">
+                <label for="input3">Deine Nachricht:</label>
+                <textarea id="input3" class="form-control" rows="3"></textarea>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-success mt-1">Senden<i class="fas fa-sign-in ml-1"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login with Avatar Form-->
 
       </div>
       <!-- End of Main Content -->
