@@ -45,13 +45,8 @@
 
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
+            <div class="input-group" >
+			Green City Award &#160;<strong>Recommender System</strong>
             </div>
           </form>
 
@@ -219,54 +214,46 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 50rem; margin-left: auto; margin-right: auto">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Green City Award Empfehlungen</h1>
-          <p class="mb-4">Hier findes Sie alle Details zu unseren Empfehlungen, wie Sie Ihren Green City Award Score verbessern können und Ihr Gemeinde umweltfreundlicher machen können!</a>.</p>
+          <h1 class="h3 mb-2 text-gray-800">Unsere <b>Green City Award Empfehlungen</b></h1>
+          <p class="mb-4">Hier findes Sie alle Details zu unseren Empfehlungen, wie Sie Ihren Green City Award Score verbessern können und Ihre Gemeinde umweltfreundlicher gestalten!</a>.</p>
 
           <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <div class="card shadow mb-2" style="width: 50rem; margin-left: auto; margin-right: auto" >
+            <div class="card-body" width="100px">
+              <div class="table-responsive" width="100px">
+                <table class="table borderless" id="dataTable" width="100%" cellspacing="0">
                   <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                   <tr>
+                      <th><center>Empfehlung: <br> <FONT SIZE="3">Installation von <br><b>Photovoltaikanlagen</b></FONT></center> </th>
+                      <th><center>Green Index Score: <br><span style="color:green"><FONT SIZE="5"> +10 Punkte</FONT></span></center></th>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
-                  </tfoot>
                   <tbody>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                      <td>Subventionspotential:</td>
+                      <td><center>40% - 65%</center></td>
                     </tr>
                     <tr>
-                      <td>Garrett Winters</td>
-                      <td>Accountant</td>
-                      <td>Tokyo</td>
-                      <td>63</td>
-                      <td>2011/07/25</td>
-                      <td>$170,750</td>
+                      <td>Berechnete Ersparnis (pro Jahr):</td>
+                      <td><center>~1480 €</center></td>
                     </tr>
+					                  <tr>
+                      <td>Berechnete Gesamtkosten:</td>
+                      <td><center>~11.700 €</center></td>
+                    </tr>
+					                  <tr>
+                      <td>Amortisierungszeitraum:</td>
+                      <td><center>~7.9 Jahre</center></td>
+                    </tr>
+					  <tr>
+					<td colspan="2"><FONT SIZE="2">Begründung des Vorschlags: In Ihrem Gebiert gibt es besonders viel ungenutze Dachflächen mit einer durchschnittlichen Sonneneinstrahlung von 6h/Tag. Dies liegt über dem Druchschnitt in Ihrer Region.</FONT></td>
+					</tr>
+					<tr>
+					<td colspan="2"><center><button type="button" class="btn btn-success">Anfragen</button></center></td>
+					</tr>
                   </tbody>
                 </table>
               </div>
@@ -280,6 +267,15 @@
       <!-- End of Main Content -->
 
       <!-- Footer -->
+	        <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Dieser Service ist eine Dienstleistung der <br>Pfalzwerke </br></span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
       <!-- End of Footer -->
 
     </div>
@@ -311,6 +307,8 @@
       </div>
     </div>
   </div>
+  
+
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -328,6 +326,13 @@
 
   <!-- Page level custom scripts -->
   <script src="js/demo/datatables-demo.js"></script>
+  
+  <script>var table = $("#dataTable").DataTable({
+   "paging": false,
+   "ordering": false,
+   "searching": false
+});
+</script>
 
 </body>
 
